@@ -22,7 +22,7 @@ function App() {
   },[])
 
   async function reviewCode() {
-    const response = await axios.post(`vercel-backend-gamma-swart.vercel.app/ai/get-review`, { code })
+    const response = await axios.post(`https://vercel-backend-gamma-swart.vercel.app/ai/get-review`, { code })
     setReview(response.data)
   }
   
