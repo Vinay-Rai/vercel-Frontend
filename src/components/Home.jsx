@@ -17,7 +17,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 function App() {
 
   const { loginWithRedirect, user, isAuthenticated, logout, isLoading } = useAuth0();
-  console.log("current user", user)
+  // console.log("current user", user)
 
   const [code, setCode] = useState(`
     function sum(){
@@ -61,7 +61,7 @@ function App() {
 })
     let data = await response.json()
     alert(data.message)
-    console.log( data)
+    // console.log( data)
     
   }
 
